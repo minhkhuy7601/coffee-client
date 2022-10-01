@@ -8,8 +8,8 @@ interface IProduct {
 }
 const Product = ({ name, price, srcImg }: IProduct) => {
   return (
-    <div>
-      <div className="w-full rounded-xl shadow-xl border-2 overflow-hidden">
+    <div className="cursor-pointer">
+      <div className="w-full rounded-xl shadow-xl border-2 overflow-hidden hover:scale-105 duration-300">
         <Image
           alt="product"
           src={srcImg}
