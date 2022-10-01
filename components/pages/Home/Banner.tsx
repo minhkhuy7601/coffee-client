@@ -3,15 +3,16 @@ import Image from "next/image";
 
 const Banner = () => {
   return (
-    <div className="w-screen h-[450px]">
-      <div className="w-full h-full relative">
-        <Image
-          src="/assets/banner1.webp"
-          layout="fill"
-          objectFit="cover"
-          alt="banner"
-        />
-      </div>
+    <div className="w-screen mt-10 ">
+      <Image
+        src="/assets/banner1.webp"
+        width="100%"
+        height="30%"
+        layout="responsive"
+        objectFit="contain"
+        objectPosition="top"
+        alt="banner"
+      />
     </div>
   );
 };

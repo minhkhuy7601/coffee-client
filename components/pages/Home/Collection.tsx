@@ -1,3 +1,4 @@
+import classNames from "classnames";
 import Image from "next/image";
 import React from "react";
 import Product from "../../common/Product";
@@ -5,7 +6,13 @@ import Product from "../../common/Product";
 const Collection = () => {
   const items = new Array(8).fill(null);
   return (
-    <section className="grid grid-cols-4 gap-6 mx-60 my-10">
+    <section
+      className={classNames(
+        "grid gap-4 px-4 my-10  w-full grid-cols-2",
+        "md:grid-cols-3 md:gap-6",
+        "lg:grid-cols-4 lg:px-0 lg:gap-6 lg:w-[1000px] xl:mx-auto"
+      )}
+    >
       {items.map((item, index) => (
         <Product
           key={index}

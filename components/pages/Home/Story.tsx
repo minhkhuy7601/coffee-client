@@ -1,3 +1,4 @@
+import classNames from "classnames";
 import Image from "next/image";
 import React, { useRef } from "react";
 import { articles } from "../../../masterdata";
@@ -16,7 +17,13 @@ const Story = () => {
         />
         <span>Chuyện nhà</span>
       </h2>
-      <div className="grid grid-cols-3 gap-7 px-60 mt-8">
+      <div
+        className={classNames(
+          "grid grid-cols-1 gap-7 w-full mx-auto px-4 mt-8",
+          "md:grid-cols-2",
+          "lg:grid-cols-3 lg:w-[1280px]"
+        )}
+      >
         {dataArticles.current.map((article, index) => (
           <Article
             key={index}

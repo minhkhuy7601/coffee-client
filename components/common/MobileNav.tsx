@@ -11,7 +11,7 @@ const MobileNav = () => {
 
   return (
     <>
-      <div className="lg:hidden fixed top-0 left-0 z-30 w-screen h-10 border-2 flex items-center justify-center">
+      <div className="lg:hidden fixed  top-0 left-0 z-30 w-screen h-10 border-2 flex items-center justify-center bg-white">
         <div
           className="absolute top-1/2 -translate-y-1/2 left-2"
           onClick={() => {
