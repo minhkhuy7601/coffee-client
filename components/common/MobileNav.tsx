@@ -11,7 +11,7 @@ const MobileNav = () => {
 
   return (
     <>
-      <div className="lg:hidden relative w-screen h-10 border-2 flex items-center justify-center">
+      <div className="lg:hidden fixed top-0 left-0 z-30 w-screen h-10 border-2 flex items-center justify-center">
         <div
           className="absolute top-1/2 -translate-y-1/2 left-2"
           onClick={() => {
@@ -24,7 +24,7 @@ const MobileNav = () => {
       </div>
       <div
         className={classNames(
-          "fixed top-0 left-0 h-screen w-screen",
+          "fixed top-0 left-0 h-screen w-screen z-40",
           isActive ? "visible" : "invisible"
         )}
       >
@@ -83,7 +83,7 @@ const ItemMenu = ({ data }: any) => {
       <div
         className={classNames(
           "overflow-hidden duration-500",
-          isActive ? "h-auto" : "h-0"
+          isActive ? "max-h-full" : "max-h-0"
         )}
       >
         {data?.children?.map((item: any, ind: any) => (

@@ -7,7 +7,7 @@ import classNames from "classnames";
 const Nav = () => {
   const dataNav = useRef(navigation);
   return (
-    <div className="hidden relative w-full h-12 lg:flex justify-center items-center shadow-md">
+    <div className="fixed hidden top-0 left-0 z-40 w-full h-12 lg:flex justify-center items-center shadow-md bg-white bg-opacity-80">
       <div className="absolute top-1/2 -translate-y-1/2 left-60 uppercase font-bold cursor-pointer">
         coffee logo
       </div>
@@ -42,7 +42,7 @@ const Nav = () => {
 const SubMenu = ({ data }: { data: any }) => {
   console.log(data);
   return (
-    <div className="absolute w-screen top-full left-0 group-hover:visible group-hover:translate-y-0 group-hover:opacity-100 group-hover:text-black invisible  duration-300  translate-y-4 opacity-0 ">
+    <div className="absolute w-screen top-full  left-0 group-hover:visible group-hover:translate-y-2 border-b-2  group-hover:opacity-100 group-hover:text-black invisible  duration-300  translate-y-4 opacity-0 bg-white pb-6">
       <div className="w-2/3 mx-auto flex gap-4">
         {data.map((row: any, index: any) => (
           <div key={index} className="flex-grow">

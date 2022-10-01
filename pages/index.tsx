@@ -1,3 +1,5 @@
+import Home from "../components/pages/Home";
+import Banner from "../components/pages/Home/Banner";
 import { Meta } from "../layouts/Meta";
 import { Main } from "../templates/Main";
 
@@ -11,7 +13,7 @@ const Index = () => {
         />
       }
     >
-      Content
+      <Home />
     </Main>
   );
 };

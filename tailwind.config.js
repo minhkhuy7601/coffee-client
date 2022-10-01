@@ -5,7 +5,15 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: {
+        introduction: "url('/assets/bg-1.png')",
+      },
+      fontFamily: {
+        body: ["SF Pro Display", "sans-serif"],
+        playFair: ["Playfair Display", "sans-serif"],
+      },
+    },
   },
   plugins: [],
 };

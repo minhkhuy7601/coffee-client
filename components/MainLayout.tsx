@@ -9,12 +9,12 @@ interface IMainLayout {
 
 const MainLayout = ({ children }: IMainLayout) => {
   return (
-    <>
+    <main className="font-body">
       <Header />
       {children}
       <Footer />
       <MobileFooter />
-    </>
+    </main>
   );
 };
 
