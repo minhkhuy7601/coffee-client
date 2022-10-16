@@ -9,7 +9,7 @@ interface IMainLayout {
 
 const MainLayout = ({ children }: IMainLayout) => {
   return (
-    <main className="font-body">
+    <main className="font-body w-screen">
       <Header />
       {children}
       <Footer />

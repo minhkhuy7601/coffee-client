@@ -87,11 +87,8 @@ const ItemMenu = ({ data }: any) => {
         )}
       >
         {data?.children?.map((item: any, ind: any) => (
-          <>
-            <div
-              key={ind}
-              className="w-full text-sm py-4 border-b-2 px-6 pl-8 font-semibold flex justify-between items-center"
-            >
+          <div key={ind}>
+            <div className="w-full text-sm py-4 border-b-2 px-6 pl-8 font-semibold flex justify-between items-center">
               {item.title}
             </div>
             {item?.items?.map((sub: any, i: any) => (
@@ -102,7 +99,7 @@ const ItemMenu = ({ data }: any) => {
                 {sub.name}
               </div>
             ))}
-          </>
+          </div>
         ))}
       </div>
     </>

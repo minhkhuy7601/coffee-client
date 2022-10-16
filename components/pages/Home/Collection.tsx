@@ -8,7 +8,7 @@ const Collection = () => {
   return (
     <section
       className={classNames(
-        "grid gap-4 px-4 my-10  w-full grid-cols-2",
+        "grid gap-4 px-4 my-10 w-full grid-cols-2",
         "md:grid-cols-3 md:gap-6",
         "lg:grid-cols-4 lg:px-0 lg:gap-6 lg:w-[1000px] xl:mx-auto"
       )}
