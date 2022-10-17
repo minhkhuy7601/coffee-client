@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { useRouter } from "next/router";
 import React from "react";
 
 interface IProduct {
@@ -7,8 +8,14 @@ interface IProduct {
   srcImg: string;
 }
 const Product = ({ name, price, srcImg }: IProduct) => {
+  const router = useRouter();
   return (
-    <div className="cursor-pointer">
+    <div
+      className="cursor-pointer"
+      onClick={() => {
+        router.push(`/products/${name}`);
+      }}
+    >
       <div className="w-full rounded-xl shadow-xl border-2 overflow-hidden hover:scale-105 duration-300">
         <Image
           alt="product"

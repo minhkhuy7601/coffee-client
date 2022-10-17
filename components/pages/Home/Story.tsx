@@ -7,7 +7,7 @@ import Article from "./Article";
 const Story = () => {
   const dataArticles = useRef(articles);
   return (
-    <section className="py-10 mb-16">
+    <section className="py-10 mb-16" id="story-id">
       <h2 className="flex items-center w-full justify-center text-2xl font-semibold gap-2">
         <Image
           src="/assets/icon-coffee.webp"

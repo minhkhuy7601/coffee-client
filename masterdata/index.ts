@@ -1,6 +1,4 @@
 export const navigation = [
-  { name: "Coffee" },
-  { name: "Tea" },
   {
     name: "Menu",
     children: [
@@ -259,4 +257,9 @@ export const dataProducts = [
     description:
       "CloudFee Creme Brulee Caramel ngon khó cưỡng bởi lớp kem trứng Creme Brulee bồng bềnh béo mịn, ngọt thanh của Caramel, thêm xíu đắng nhẹ từ cà phê, kèm topping thạch cà phê dai dai giòn giòn.",
   },
+];
+
+export const paymentMethods = [
+  { name: "Tiền mặt", key: "", iconSrc: "/assets/cash.jpg" },
+  { name: "Momo", key: "", iconSrc: "/assets/momo.png" },
 ];
